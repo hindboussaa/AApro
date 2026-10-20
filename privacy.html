@@ -3,44 +3,160 @@
 <html lang="en-GB">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1">
 
   <title>Privacy Policy | AA PRO Window Cleaning</title>
-  <meta name="description" content="Privacy Policy for AA PRO Window Cleaning, explaining how we handle customer and website information.">
+
+  <meta name="description"
+        content="Read the Privacy Policy for AA PRO Window Cleaning Services in Leicester, including how we handle personal information, customer enquiries and cookies.">
 
   <style>
+    :root {
+      --navy: #103c60;
+      --navy-dark: #082b46;
+      --blue: #086ca5;
+      --background: #f5f8fb;
+      --text: #172b3b;
+      --white: #ffffff;
+      --border: #dce5ed;
+    }
+
     * {
       box-sizing: border-box;
     }
 
+    html {
+      scroll-behavior: smooth;
+    }
+
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f5f8fb;
-      color: #172b3b;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--background);
+      color: var(--text);
       line-height: 1.7;
     }
 
+    a {
+      color: var(--blue);
+    }
+
+    a:focus-visible,
+    button:focus-visible {
+      outline: 3px solid #ffbf47;
+      outline-offset: 4px;
+    }
+
+    /* HEADER */
+
     header {
-      background: #103c60;
-      color: white;
-      padding: 24px 5%;
+      background: var(--navy);
+      color: var(--white);
     }
 
-    header a {
-      color: white;
+    .nav {
+      max-width: 1200px;
+      margin: auto;
+      padding: 20px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+
+    .site-title {
+      margin: 0;
+      font-size: 20px;
+      line-height: 1.3;
+      font-weight: 700;
+    }
+
+    .site-title a {
+      color: var(--white);
       text-decoration: none;
+    }
+
+    #nav-menu {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    #nav-menu a {
+      color: var(--white);
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 600;
+    }
+
+    #nav-menu a:hover,
+    #nav-menu a[aria-current="page"] {
+      text-decoration: underline;
+      text-underline-offset: 5px;
+    }
+
+    .call-number {
+      margin: 0;
+      white-space: nowrap;
+      font-size: 14px;
+    }
+
+    .call-number a {
+      color: var(--white);
       font-weight: bold;
+      text-decoration: none;
     }
 
-    nav {
-      margin-top: 12px;
+    .call-number a:hover {
+      text-decoration: underline;
     }
 
-    nav a {
-      margin-right: 20px;
-      font-weight: normal;
+    /* MOBILE MENU BUTTON */
+
+    .menu-toggle {
+      display: none;
+      width: 44px;
+      height: 44px;
+      padding: 9px;
+      border: 1px solid rgba(255,255,255,0.5);
+      border-radius: 6px;
+      background: transparent;
+      cursor: pointer;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 5px;
     }
+
+    .menu-toggle span {
+      display: block;
+      width: 24px;
+      height: 2px;
+      background: var(--white);
+      border-radius: 2px;
+      transition: transform 0.2s ease,
+                  opacity 0.2s ease;
+    }
+
+    .menu-toggle[aria-expanded="true"]
+    span:nth-child(1) {
+      transform: translateY(7px) rotate(45deg);
+    }
+
+    .menu-toggle[aria-expanded="true"]
+    span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .menu-toggle[aria-expanded="true"]
+    span:nth-child(3) {
+      transform: translateY(-7px) rotate(-45deg);
+    }
+
+    /* MAIN CONTENT */
 
     main {
       max-width: 960px;
@@ -49,52 +165,239 @@
     }
 
     .content {
-      background: white;
-      padding: 35px;
+      background: var(--white);
+      padding: 40px;
+      border: 1px solid var(--border);
       border-radius: 12px;
       box-shadow: 0 4px 20px rgba(0,0,0,0.06);
     }
 
     h1 {
-      color: #103c60;
+      margin-top: 0;
+      color: var(--navy);
       font-size: 36px;
+      line-height: 1.25;
     }
 
     h2 {
-      color: #103c60;
-      margin-top: 32px;
+      color: var(--navy);
+      margin-top: 36px;
+      margin-bottom: 12px;
+      font-size: 23px;
+      line-height: 1.4;
     }
 
-    a {
-      color: #086ca5;
+    p {
+      margin: 12px 0;
     }
 
-    .notice {
-      background: #fff5dd;
-      border-left: 4px solid #d49a25;
-      padding: 15px;
-      margin: 20px 0;
+    .content ul {
+      padding-left: 24px;
     }
+
+    .content li {
+      margin-bottom: 9px;
+    }
+
+    .policy-meta {
+      color: #526475;
+      font-size: 14px;
+      margin-bottom: 28px;
+    }
+
+    .review-note {
+      padding: 16px 18px;
+      background: #fff8e6;
+      border-left: 4px solid #c68a16;
+      border-radius: 4px;
+      margin: 22px 0;
+    }
+
+    /* FOOTER */
 
     footer {
-      text-align: center;
-      background: #103c60;
-      color: white;
-      padding: 25px;
-      margin-top: 40px;
+      background: var(--navy);
+      color: var(--white);
+      margin-top: 50px;
+    }
+
+    .footer-container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 45px 24px;
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 30px;
+    }
+
+    footer h3 {
+      margin: 0 0 16px;
+      color: var(--white);
+      font-size: 18px;
+    }
+
+    footer p {
+      font-size: 14px;
+      margin: 10px 0;
     }
 
     footer a {
-      color: white;
+      color: var(--white);
+      text-decoration: none;
     }
 
-    @media (max-width: 600px) {
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    .footer-links ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    .footer-links li {
+      margin-bottom: 9px;
+      font-size: 14px;
+    }
+
+    .footer-links h3:not(:first-child) {
+      margin-top: 25px;
+    }
+
+    .footer-social {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 12px;
+    }
+
+    .footer-social h3 {
+      margin-bottom: 4px;
+    }
+
+    .social-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 14px;
+    }
+
+    .social-icon {
+      display: inline-flex;
+      width: 30px;
+      height: 30px;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid rgba(255,255,255,0.5);
+      border-radius: 50%;
+      font-weight: bold;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.2);
+      text-align: center;
+      padding: 16px 20px;
+    }
+
+    .footer-bottom p {
+      margin: 0;
+    }
+
+    /* TABLET */
+
+    @media (max-width: 1050px) {
+      .nav {
+        gap: 16px;
+      }
+
+      .site-title {
+        width: 100%;
+      }
+
+      .footer-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    /* MOBILE */
+
+    @media (max-width: 760px) {
+      .nav {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 12px;
+        padding: 18px 20px;
+      }
+
+      .site-title {
+        width: auto;
+        font-size: 17px;
+        align-self: center;
+      }
+
+      .menu-toggle {
+        display: flex;
+        grid-column: 2;
+        grid-row: 1;
+      }
+
+      #nav-menu {
+        display: none;
+        grid-column: 1 / -1;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+        border-top: 1px solid rgba(255,255,255,0.25);
+        padding-top: 10px;
+      }
+
+      #nav-menu.is-open {
+        display: flex;
+      }
+
+      #nav-menu a {
+        display: block;
+        padding: 12px 4px;
+        font-size: 16px;
+      }
+
+      .call-number {
+        grid-column: 1 / -1;
+        font-size: 14px;
+      }
+
+      main {
+        margin: 22px auto;
+        padding: 0 14px;
+      }
+
       .content {
-        padding: 20px;
+        padding: 24px 20px;
       }
 
       h1 {
-        font-size: 28px;
+        font-size: 29px;
+      }
+
+      h2 {
+        font-size: 21px;
+      }
+
+      .footer-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 35px 24px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      .menu-toggle span {
+        transition: none;
       }
     }
   </style>
@@ -102,363 +405,627 @@
 
 <body>
 
-<!-- HEADER -->
-<header>
-<div class="nav">
-
-<h2>AA PRO WINDOW CLEANING SERVICES</h2>
-
-<div class="menu-toggle" id="mobile-menu">
-<span></span>
-<span></span>
-<span></span>
-</div>
-
-<nav id="nav-menu">
-<a href="index.html">Home</a>
-<a href="method.html">Our Methods</a>
-<a href="services.html">Services</a>
-<a href="ourwork.html">Our Work</a>
-<a href="contact.html">Contact</a>
-</nav>
-
-<p class="call-number">
-Call Us: <a href="tel:+447810100030">07810100030</a>
-</p>
-
-</div>
-</header>
-
-
-<main>
-  <article class="content">
-
-    <h1>Privacy Policy</h1>
-
-    <p>
-      <strong>Website:</strong>
-      https://aaprowindowcleaning.co.uk/
-    </p>
-
-    <p>
-      <strong>Last updated:</strong>
-      20 October 2026
-    </p>
-
-    <h2>1. Who We Are</h2>
-
-    <p>
-      AA PRO Window Cleaning provides residential
-      and commercial window-cleaning services
-      and related cleaning services.
-    </p>
-
-
-    <p>
-      Email:
-      <strong>Aaprowindow@hotmail.com</strong>
-    </p>
-
-    <h2>2. Information We Collect</h2>
-
-    <p>
-      When you contact us or request a quotation,
-      we may collect:
-    </p>
-
-    <ul>
-      <li>Your name</li>
-      <li>Email address</li>
-      <li>Telephone number</li>
-      <li>Property or service address</li>
-      <li>Information about requested cleaning services</li>
-      <li>Messages you send to us</li>
-      <li>Appointment and service records</li>
-      <li>Payment and invoice information, where applicable</li>
-    </ul>
-
-
-
-    <p>
-      Our hosting provider may also process
-      technical information, such as IP addresses,
-      browser details and website access logs.
-    </p>
-
-    <h2>3. How We Use Your Information</h2>
-
-    <p>
-      We use personal information where necessary to:
-    </p>
-
-    <ul>
-      <li>Respond to customer enquiries</li>
-      <li>Provide cleaning quotations</li>
-      <li>Arrange cleaning appointments</li>
-      <li>Deliver agreed cleaning services</li>
-      <li>Send invoices and manage payments</li>
-      <li>Meet applicable legal obligations</li>
-      <li>Protect our website and business</li>
-    </ul>
-
-    <h2>4. Legal Basis for Processing</h2>
-
-    <p>
-      Depending on the circumstances, we rely on
-      the following lawful bases under UK GDPR:
-    </p>
-
-    <ul>
-      <li>
-        <strong>Contract:</strong>
-        Providing agreed services and taking
-        steps requested before entering a contract.
-      </li>
-
-      <li>
-        <strong>Legitimate interests:</strong>
-        Responding to general enquiries,
-        protecting the business and managing
-        appropriate business operations.
-      </li>
-
-      <li>
-        <strong>Legal obligations:</strong>
-        Keeping records required by tax,
-        accounting or other applicable laws.
-      </li>
-
-      <li>
-        <strong>Consent:</strong>
-        Where consent is legally required,
-        such as certain optional cookies
-        or marketing activities.
-      </li>
-    </ul>
-
-    <h2>5. Sharing Your Information</h2>
-
-    <p>
-      We may share personal information with
-      service providers necessary to operate
-      our business, such as:
-    </p>
-
-    <ul>
-      <li>Website hosting providers</li>
-      <li>Email service providers</li>
-      <li>Contact form providers</li>
-      <li>Booking or invoicing services</li>
-      <li>Professional advisers, where necessary</li>
-      <li>Authorities, where required by law</li>
-    </ul>
-
-
-    <h2>6. Data Retention</h2>
-
-    <p>
-      We keep personal information only for
-      as long as reasonably necessary for
-      the purposes for which it was collected,
-      including applicable legal requirements.
-    </p>
-
-    <h2>7. Cookies and Tracking Technologies</h2>
-
-    <p>
-      At the time this policy was prepared,
-      AA PRO Window Cleaning does not use
-      Google Analytics or Google AdSense,
-      based on information supplied by
-      the website owner.
-    </p>
-
-    <p>
-      Our hosting provider or other website
-      services may still use cookies or
-      similar technologies.
-    </p>
-
-
-
-    <p>
-      Where non-essential cookies or similar
-      technologies require consent, we will
-      request that consent before using them.
-    </p>
-
-    <p>
-      Simply visiting our website does not
-      constitute consent to optional cookies.
-    </p>
-
-    <h2>8. Future Google AdSense Advertising</h2>
-
-    <p>
-      Google AdSense is not currently installed
-      on this website.
-    </p>
-
-    <p>
-      If we introduce Google AdSense in the
-      future, we will update this Privacy Policy
-      to explain the advertising technologies,
-      relevant data processing and visitor choices.
-    </p>
-
-    <p>
-      We will also implement applicable cookie
-      consent and Google advertising requirements
-      before enabling those services.
-    </p>
-
-    <h2>9. Your Data Protection Rights</h2>
-
-    <p>
-      Under UK data protection law, you may
-      have the right to:
-    </p>
-
-    <ul>
-      <li>Access personal information held about you</li>
-      <li>Request correction of inaccurate information</li>
-      <li>Request deletion in certain circumstances</li>
-      <li>Restrict certain processing activities</li>
-      <li>Object to certain processing</li>
-      <li>Request data portability where applicable</li>
-      <li>Withdraw consent where processing relies on consent</li>
-    </ul>
-
-    <p>
-      These rights are subject to applicable
-      conditions and legal exceptions.
-    </p>
-
-    <p>
-      To exercise your rights, contact:
-      <strong>Aaprowindow@hotmail.com</strong>
-    </p>
-
-    <h2>10. Complaints</h2>
-
-    <p>
-      If you have concerns about how we handle
-      personal information, please contact us first.
-    </p>
-
-    <p>
-      You also have the right to complain to
-      the UK's Information Commissioner's Office.
-    </p>
-
-    <p>
-   
-    </p>
-
-    <h2>11. Data Security</h2>
-
-    <p>
-      We aim to take reasonable technical
-      and organisational measures to protect
-      personal information against unauthorised
-      access, loss and misuse.
-    </p>
-
- 
-
-    <h2>12. Changes to This Privacy Policy</h2>
-
-    <p>
-      We may update this Privacy Policy
-      when our business operations, service
-      providers or legal obligations change.
-    </p>
-
-    <p>
-      The last updated date at the top
-      of this page will indicate when
-      changes were made.
-    </p>
-
-  </article>
-</main>
-
-<footer>
-
-<div class="footer-container">
-
-<!-- CONTACT -->
-<div class="footer-contact">
-<h3>Find Us</h3>
-
-<p>
-AA PRO WINDOW CLEANING SERVICES<br>
-Leicester<br>
-LE5 5NT
-</p>
-
-<p>
-📞 <a href="tel:07810100030">07810100030</a>
-</p>
-</div>
-
-
-<!-- QUICK LINKS -->
-<div class="footer-links">
-
-<h3>Quick Links</h3>
-
-<ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="method.html">Our Methods</a></li>
-<li><a href="services.html">Services</a></li>
-<li><a href="contact.html">Contact</a></li>
-<li><a href="privacy.html">Privacy Policy</a></li>
-
-</ul>
-
-<h3>Areas We Cover</h3>
-<p>Leicester</p>
-
-</div>
-
-
-<!-- ABOUT -->
-<div class="footer-about">
-
-<h3>AA PRO Window Cleaning Services</h3>
-
-<p>
-AA PRO Window Cleaning Services is a small but established company
-operating in and around Leicester.
-</p>
-
-</div>
-
-
-<!-- SOCIAL MEDIA -->
-<div class="footer-social">
-
-<h3>Follow Us</h3>
-
-<a href="https://www.facebook.com/profile.php?id=61580588357613&sk=reels_tab" target="_blank">
-<i class="fa-brands fa-facebook"></i>
-</a>
-<a href="https://instagram.com" target="_blank">
-<i class="fa-brands fa-instagram"></i>
-</a>
-<a href="https://wa.me/447810100030" target="_blank">
-<i class="fa-brands fa-whatsapp"></i>
-</a>
-</div>
-</div>
-
-
-<div class="footer-bottom">
-<p>© 2026 AA PRO Window Cleaning Services. All rights reserved.</p>
-</div>
-
-</footer>
+  <!-- HEADER -->
+  <header>
+    <div class="nav">
+
+      <p class="site-title">
+        <a href="index.html">
+          AA PRO WINDOW CLEANING SERVICES
+        </a>
+      </p>
+
+      <button
+        class="menu-toggle"
+        id="mobile-menu"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-controls="nav-menu"
+        aria-expanded="false"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav id="nav-menu" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="method.html">Our Methods</a>
+        <a href="services.html">Services</a>
+        <a href="ourwork.html">Our Work</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <p class="call-number">
+        Call Us:
+        <a href="tel:+447810100030">
+          07810100030
+        </a>
+      </p>
+
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <article class="content">
+
+      <h1>Privacy Policy</h1>
+
+      <div class="policy-meta">
+        <p>
+          <strong>Website:</strong>
+          <a href="https://aaprowindowcleaning.co.uk/">
+            aaprowindowcleaning.co.uk
+          </a>
+        </p>
+
+        <p>
+          <strong>Last updated:</strong>
+          20 October 2026
+        </p>
+      </div>
+
+      <h2>1. Who We Are</h2>
+
+      <p>
+        AA PRO Window Cleaning Services provides
+        residential and commercial window-cleaning
+        services and related cleaning services
+        in Leicester and surrounding areas.
+      </p>
+
+      <p>
+        This Privacy Policy explains how we collect,
+        use, store and protect personal information
+        when you contact us, request a quotation,
+        use our services or visit our website.
+      </p>
+
+      <p>
+        <strong>Business:</strong>
+        AA PRO Window Cleaning Services
+      </p>
+
+      <p>
+        <strong>Location:</strong>
+        Leicester, LE5 5NT, United Kingdom
+      </p>
+
+      <p>
+        <strong>Email:</strong>
+        <a href="mailto:Aaprowindow@hotmail.com">
+          Aaprowindow@hotmail.com
+        </a>
+      </p>
+
+      <p>
+        <strong>Telephone:</strong>
+        <a href="tel:+447810100030">
+          07810100030
+        </a>
+      </p>
+
+      <div class="review-note">
+        <strong>Complete before publishing:</strong>
+        Identify the legal person or registered company
+        responsible for processing personal information.
+        If AA PRO Window Cleaning Services is a trading
+        name, include the legal owner's or company's
+        name here. Confirm the appropriate correspondence
+        address for privacy enquiries.
+      </div>
+
+      <h2>2. Information We Collect</h2>
+
+      <p>
+        Depending on how you interact with us,
+        we may collect:
+      </p>
+
+      <ul>
+        <li>Your name</li>
+        <li>Your email address</li>
+        <li>Your telephone number</li>
+        <li>Your property or service address</li>
+        <li>
+          Information about the cleaning services
+          you request
+        </li>
+        <li>Messages and enquiries you send us</li>
+        <li>Appointment and service records</li>
+        <li>
+          Payment and invoice information,
+          where applicable
+        </li>
+      </ul>
+
+      <p>
+        Our website hosting provider may also
+        process technical information, including
+        IP addresses, browser information and
+        server access logs, depending on how
+        our hosting is configured.
+      </p>
+
+      <h2>3. How We Use Your Information</h2>
+
+      <p>
+        We use personal information where
+        necessary to:
+      </p>
+
+      <ul>
+        <li>Respond to customer enquiries</li>
+        <li>Prepare and provide quotations</li>
+        <li>Arrange cleaning appointments</li>
+        <li>Provide agreed cleaning services</li>
+        <li>Manage customer communications</li>
+        <li>Issue invoices and process payments</li>
+        <li>Maintain appropriate business records</li>
+        <li>Comply with legal obligations</li>
+        <li>
+          Protect our website and business
+          against misuse
+        </li>
+      </ul>
+
+      <h2>4. Legal Basis for Processing</h2>
+
+      <p>
+        Under UK data protection law, our
+        lawful basis depends on why we
+        process the information.
+      </p>
+
+      <ul>
+        <li>
+          <strong>Contract:</strong>
+          To provide cleaning services or
+          take steps you request before
+          entering into a contract.
+        </li>
+
+        <li>
+          <strong>Legitimate interests:</strong>
+          To respond to general enquiries,
+          maintain appropriate business
+          operations and protect our services,
+          where these interests are not
+          overridden by your rights.
+        </li>
+
+        <li>
+          <strong>Legal obligation:</strong>
+          To comply with applicable accounting,
+          tax and other legal requirements.
+        </li>
+
+        <li>
+          <strong>Consent:</strong>
+          Where consent is required for
+          particular activities, such as
+          certain optional cookies or
+          marketing communications.
+        </li>
+      </ul>
+
+      <h2>5. Sharing Your Information</h2>
+
+      <p>
+        We may share personal information
+        with service providers where necessary
+        to operate our business.
+      </p>
+
+      <p>
+        Depending on the services we actually use,
+        these may include:
+      </p>
+
+      <ul>
+        <li>Website hosting providers</li>
+        <li>Email service providers</li>
+        <li>Website contact form providers</li>
+        <li>Booking or invoicing providers</li>
+        <li>Payment processing providers</li>
+        <li>Professional advisers</li>
+        <li>
+          Public authorities where disclosure
+          is legally required
+        </li>
+      </ul>
+
+      <p>
+        We do not disclose customer information
+        to unrelated third parties for their
+        own marketing purposes unless a lawful
+        basis permits this.
+      </p>
+
+      <div class="review-note">
+        <strong>Complete before publishing:</strong>
+        Confirm which providers you actually use.
+        Explain any transfers of personal information
+        outside the UK and the relevant safeguards,
+        if applicable.
+      </div>
+
+      <h2>6. How Long We Keep Information</h2>
+
+      <p>
+        We keep personal information only for
+        as long as necessary for the purpose
+        for which it was collected, including
+        applicable legal and accounting
+        requirements.
+      </p>
+
+      <p>
+        Retention periods may differ for
+        enquiries, customer records, invoices
+        and website technical logs.
+      </p>
+
+      <div class="review-note">
+        <strong>Complete before publishing:</strong>
+        State your actual retention periods
+        or clear criteria for deciding them.
+        Do not invent retention periods.
+      </div>
+
+      <h2>7. Cookies and Tracking Technologies</h2>
+
+      <p>
+        AA PRO Window Cleaning Services
+        does not currently use Google Analytics
+        or Google AdSense, based on the
+        website owner's current information.
+      </p>
+
+      <p>
+        Other website services, including
+        hosting providers and embedded content,
+        may use cookies or similar technologies.
+      </p>
+
+      <p>
+        You can manage or delete cookies
+        through your browser settings.
+      </p>
+
+      <p>
+        Where the law requires consent for
+        non-essential cookies or similar
+        technologies, we must obtain that
+        consent before using them.
+      </p>
+
+      <p>
+        Simply visiting our website does not
+        constitute consent to optional cookies.
+      </p>
+
+      <div class="review-note">
+        <strong>Complete before publishing:</strong>
+        Check which cookies, scripts and embedded
+        services your website actually uses.
+        Disclose their purposes and relevant
+        details. Implement a consent mechanism
+        where required.
+      </div>
+
+      <h2>8. Google AdSense Advertising</h2>
+
+      <p>
+        Google AdSense is not currently
+        installed on this website.
+      </p>
+
+      <p>
+        If we introduce Google AdSense in
+        the future, we will update this
+        Privacy Policy to explain the
+        relevant advertising technologies,
+        data processing and visitor choices.
+      </p>
+
+      <p>
+        We will also review and implement
+        applicable Google advertising
+        and cookie consent requirements
+        before enabling advertising.
+      </p>
+
+      <h2>9. Your Data Protection Rights</h2>
+
+      <p>
+        Under UK data protection law,
+        you may have the right to:
+      </p>
+
+      <ul>
+        <li>
+          Request access to personal
+          information held about you
+        </li>
+        <li>
+          Request correction of inaccurate
+          personal information
+        </li>
+        <li>
+          Request deletion in certain
+          circumstances
+        </li>
+        <li>
+          Request restriction of certain
+          processing activities
+        </li>
+        <li>
+          Object to certain processing
+        </li>
+        <li>
+          Request data portability
+          where applicable
+        </li>
+        <li>
+          Withdraw consent where
+          processing relies on consent
+        </li>
+      </ul>
+
+      <p>
+        These rights are subject to
+        applicable legal conditions
+        and exceptions.
+      </p>
+
+      <p>
+        To exercise your rights,
+        please contact:
+        <a href="mailto:Aaprowindow@hotmail.com">
+          Aaprowindow@hotmail.com
+        </a>
+      </p>
+
+      <h2>10. Complaints</h2>
+
+      <p>
+        If you have concerns about
+        how we handle your personal
+        information, please contact
+        us so we can investigate.
+      </p>
+
+      <p>
+        You also have the right to
+        complain to the UK's
+        Information Commissioner's
+        Office (ICO).
+      </p>
+
+      <p>
+        ICO website:
+        <a
+          href="https://ico.org.uk/make-a-complaint/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          ico.org.uk/make-a-complaint
+        </a>
+      </p>
+
+      <h2>11. Data Security</h2>
+
+      <p>
+        We aim to use reasonable technical
+        and organisational measures to
+        protect personal information against
+        unauthorised access, loss, misuse
+        or disclosure.
+      </p>
+
+      <p>
+        No internet-based service can
+        guarantee absolute security.
+      </p>
+
+      <h2>12. Changes to This Privacy Policy</h2>
+
+      <p>
+        We may update this Privacy Policy
+        when our business practices,
+        website services or applicable
+        legal requirements change.
+      </p>
+
+      <p>
+        The date at the top of this page
+        will show when the policy was
+        last updated.
+      </p>
+
+    </article>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+
+    <div class="footer-container">
+
+      <!-- CONTACT -->
+      <div class="footer-contact">
+        <h3>Find Us</h3>
+
+        <p>
+          AA PRO WINDOW CLEANING SERVICES<br>
+          Leicester<br>
+          LE5 5NT
+        </p>
+
+        <p>
+          &#9742;
+          <a href="tel:+447810100030">
+            07810100030
+          </a>
+        </p>
+
+        <p>
+          <a href="mailto:Aaprowindow@hotmail.com">
+            Aaprowindow@hotmail.com
+          </a>
+        </p>
+      </div>
+
+      <!-- QUICK LINKS -->
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="method.html">Our Methods</a>
+          </li>
+          <li>
+            <a href="services.html">Services</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+          <li>
+            <a href="privacy.html"
+               aria-current="page">
+              Privacy Policy
+            </a>
+          </li>
+        </ul>
+
+        <h3>Areas We Cover</h3>
+        <p>Leicester</p>
+      </div>
+
+      <!-- ABOUT -->
+      <div class="footer-about">
+        <h3>AA PRO Window Cleaning Services</h3>
+
+        <p>
+          AA PRO Window Cleaning Services
+          is a small but established company
+          operating in and around Leicester.
+        </p>
+      </div>
+
+      <!-- SOCIAL MEDIA -->
+      <div class="footer-social">
+        <h3>Follow Us</h3>
+
+        <a
+          class="social-link"
+          href="https://www.facebook.com/profile.php?id=61580588357613&amp;sk=reels_tab"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span class="social-icon"
+                aria-hidden="true">f</span>
+          Facebook
+        </a>
+
+        <a
+          class="social-link"
+          href="https://instagram.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span class="social-icon"
+                aria-hidden="true">◎</span>
+          Instagram
+        </a>
+
+        <a
+          class="social-link"
+          href="https://wa.me/447810100030"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span class="social-icon"
+                aria-hidden="true">✆</span>
+          WhatsApp
+        </a>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <p>
+        &copy; 2026 AA PRO Window Cleaning Services.
+        All rights reserved.
+      </p>
+    </div>
+
+  </footer>
+
+  <!-- MOBILE MENU SCRIPT -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const menuButton =
+        document.getElementById("mobile-menu");
+
+      const navMenu =
+        document.getElementById("nav-menu");
+
+      if (!menuButton || !navMenu) {
+        return;
+      }
+
+      function closeMenu() {
+        navMenu.classList.remove("is-open");
+        menuButton.setAttribute(
+          "aria-expanded", "false"
+        );
+        menuButton.setAttribute(
+          "aria-label", "Open navigation menu"
+        );
+      }
+
+      menuButton.addEventListener("click", function () {
+        const isOpen =
+          menuButton.getAttribute("aria-expanded")
+          === "true";
+
+        navMenu.classList.toggle("is-open", !isOpen);
+
+        menuButton.setAttribute(
+          "aria-expanded",
+          String(!isOpen)
+        );
+
+        menuButton.setAttribute(
+          "aria-label",
+          isOpen
+            ? "Open navigation menu"
+            : "Close navigation menu"
+        );
+      });
+
+      navMenu.querySelectorAll("a").forEach(function (link) {
+        link.addEventListener("click", closeMenu);
+      });
+
+      document.addEventListener("keydown", function (event) {
+        if (event.key === "Escape") {
+          closeMenu();
+        }
+      });
+
+      window.addEventListener("resize", function () {
+        if (window.innerWidth > 760) {
+          closeMenu();
+        }
+      });
+    });
+  </script>
 
 </body>
 </html>
