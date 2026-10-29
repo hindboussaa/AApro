@@ -3,15 +3,176 @@
 html{scroll-behavior:smooth}
 body{margin:0;background:#f5f8fb;color:#172b3b;font:16px/1.7 Arial,Helvetica,sans-serif;overflow-x:hidden}
 a:focus-visible,button:focus-visible{outline:3px solid #ffbf47;outline-offset:3px}
-header{background:#103c60;color:#fff}
-.nav{max-width:1200px;margin:auto;padding:20px 24px;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}
-.site-title{margin:0;font-size:19px;font-weight:700;line-height:1.3}
-.site-title a,.call-number a{color:#fff;text-decoration:none}
-#nav-menu{display:flex;align-items:center;gap:20px;flex-wrap:wrap}
-#nav-menu a{color:#fff;font-size:15px;font-weight:600;text-decoration:none}
-#nav-menu a:hover,.site-title a:hover,.call-number a:hover{color:#70d6ff}
-.call-number{margin:0;color:#fff;font-size:14px;white-space:nowrap}
-.call-number a{font-weight:700}
+
+
+
+
+/* =====================================
+   AA PRO WINDOW CLEANING
+   WHITE HEADER - DESKTOP & MOBILE
+===================================== */
+
+header {
+  background: #ffffff;
+  color: #103c60;
+  border-bottom: 1px solid #e5e7eb;
+  width: 100%;
+}
+
+.nav {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+/* BUSINESS NAME */
+
+.site-title {
+  margin: 0;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.site-title a {
+  color: #103c60;
+  text-decoration: none;
+}
+
+.site-title a:hover {
+  color: #00aaff;
+}
+
+/* DESKTOP NAVIGATION */
+
+#nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+#nav-menu a {
+  color: #103c60;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+#nav-menu a:hover,
+#nav-menu a:focus-visible {
+  color: #00aaff;
+}
+
+/* PHONE NUMBER */
+
+.call-number {
+  margin: 0;
+  color: #103c60;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.call-number a {
+  color: #103c60;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.call-number a:hover {
+  color: #00aaff;
+}
+
+/* MOBILE MENU BUTTON */
+
+.menu-toggle {
+  display: none;
+  width: 44px;
+  height: 44px;
+  padding: 9px;
+  background: transparent;
+  border: 1px solid #103c60;
+  border-radius: 6px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.menu-toggle span {
+  width: 24px;
+  height: 2px;
+  background: #103c60;
+  border-radius: 2px;
+  display: block;
+}
+
+/* TABLET */
+
+@media (max-width: 1050px) {
+  .site-title {
+    width: 100%;
+  }
+}
+
+/* MOBILE */
+
+@media (max-width: 760px) {
+  .nav {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 12px;
+    padding: 18px 20px;
+  }
+
+  .site-title {
+    grid-column: 1;
+    grid-row: 1;
+    width: auto;
+    font-size: 17px;
+  }
+
+  .menu-toggle {
+    display: flex;
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  #nav-menu {
+    display: none;
+    grid-column: 1 / -1;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding-top: 10px;
+    background: #ffffff;
+    border-top: 1px solid #e5e7eb;
+  }
+
+  #nav-menu.is-open {
+    display: flex;
+  }
+
+  #nav-menu a {
+    display: block;
+    padding: 12px 4px;
+    font-size: 16px;
+    color: #103c60;
+  }
+
+  .call-number {
+    grid-column: 1 / -1;
+    color: #103c60;
+    font-size: 14px;
+  }
+
+
 .menu-toggle{display:none;width:44px;height:44px;padding:9px;background:transparent;border:1px solid #fff;border-radius:6px;cursor:pointer;flex-direction:column;justify-content:center;align-items:center;gap:5px}
 .menu-toggle span{width:24px;height:2px;background:#fff;border-radius:2px;display:block}
 main{max-width:960px;margin:40px auto;padding:0 20px}
