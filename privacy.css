@@ -1,0 +1,61 @@
+/* AA PRO Window Cleaning — Privacy page styling */
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:#f5f8fb;color:#172b3b;font:16px/1.7 Arial,Helvetica,sans-serif;overflow-x:hidden}
+a:focus-visible,button:focus-visible{outline:3px solid #ffbf47;outline-offset:3px}
+header{background:#103c60;color:#fff}
+.nav{max-width:1200px;margin:auto;padding:20px 24px;display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap}
+.site-title{margin:0;font-size:19px;font-weight:700;line-height:1.3}
+.site-title a,.call-number a{color:#fff;text-decoration:none}
+#nav-menu{display:flex;align-items:center;gap:20px;flex-wrap:wrap}
+#nav-menu a{color:#fff;font-size:15px;font-weight:600;text-decoration:none}
+#nav-menu a:hover,.site-title a:hover,.call-number a:hover{color:#70d6ff}
+.call-number{margin:0;color:#fff;font-size:14px;white-space:nowrap}
+.call-number a{font-weight:700}
+.menu-toggle{display:none;width:44px;height:44px;padding:9px;background:transparent;border:1px solid #fff;border-radius:6px;cursor:pointer;flex-direction:column;justify-content:center;align-items:center;gap:5px}
+.menu-toggle span{width:24px;height:2px;background:#fff;border-radius:2px;display:block}
+main{max-width:960px;margin:40px auto;padding:0 20px}
+.content{padding:40px;background:#fff;border:1px solid #e0e8ef;border-radius:12px;box-shadow:0 4px 20px rgba(0,0,0,.06)}
+.content h1{margin:0 0 16px;color:#103c60;font-size:36px;line-height:1.25}
+.content h2{margin:32px 0 12px;color:#103c60;font-size:24px;line-height:1.4}
+.content p{margin:12px 0 16px}
+.content ul{padding-left:25px}
+.content li{margin-bottom:10px}
+.content a{color:#086ca5;text-decoration:underline}
+.policy-meta,.policy-meta p{color:#526475;font-size:14px}
+.policy-meta{margin-bottom:28px}
+.review-note{background:#fff8e6;border-left:4px solid #c68a16;padding:16px 18px;margin:22px 0;border-radius:4px}
+/* Footer follows the dark, blue-heading styling of your uploaded footer */
+footer{background:#0e0e0e;color:#fff;padding:60px 20px 20px}
+.footer-container{max-width:1200px;margin:auto;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:32px;align-items:start}
+.footer-contact,.footer-links,.footer-about,.footer-social{min-width:0}
+footer h3,.footer-social h3{margin:0 0 15px;color:#00aaff;font-size:18px;line-height:1.4}
+footer p{margin:0 0 14px;color:#e5e5e5;font-size:14px;line-height:1.7}
+footer a{color:#fff;text-decoration:none}
+footer a:hover{color:#00aaff}
+.footer-links ul{list-style:none;padding:0;margin:0 0 24px}
+.footer-links li{margin-bottom:10px;font-size:14px}
+.footer-links h3:not(:first-child){margin-top:25px}
+.footer-social{display:flex;flex-direction:column;align-items:flex-start;gap:12px}
+.footer-social h3{margin-bottom:4px}
+.footer-social .social-link{display:inline-flex;align-items:center;gap:10px;font-size:14px}
+.social-icon{width:30px;height:30px;display:inline-flex;align-items:center;justify-content:center;border:1px solid #00aaff;border-radius:50%;color:#00aaff;font-weight:700}
+.footer-bottom{max-width:1200px;margin:35px auto 0;padding-top:20px;border-top:1px solid #333;text-align:center}
+.footer-bottom p{margin:0;color:#aaa;font-size:13px}
+@media(max-width:1050px){.site-title{width:100%}.footer-container{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:760px){
+ .nav{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px;padding:18px 20px}
+ .site-title{grid-column:1;grid-row:1;width:auto;font-size:17px}
+ .menu-toggle{display:flex;grid-column:2;grid-row:1}
+ #nav-menu{display:none;grid-column:1/-1;flex-direction:column;align-items:stretch;gap:0;padding-top:10px;border-top:1px solid rgba(255,255,255,.25)}
+ #nav-menu.is-open{display:flex}
+ #nav-menu a{display:block;padding:12px 4px;font-size:16px}
+ .call-number{grid-column:1/-1;font-size:14px}
+ main{margin:20px auto;padding:0 14px}
+ .content{padding:24px 20px}
+ .content h1{font-size:29px}
+ .content h2{font-size:21px}
+ footer{padding:40px 20px 20px}
+ .footer-container{grid-template-columns:1fr;gap:30px}
+ .footer-social{align-items:flex-start}
+}
