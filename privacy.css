@@ -59,3 +59,65 @@ footer a:hover{color:#00aaff}
  .footer-container{grid-template-columns:1fr;gap:30px}
  .footer-social{align-items:flex-start}
 }
+
+
+
+
+/* WHITE HEADER */
+
+header {
+  background: #ffffff;
+  color: #103c60;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+/* BUSINESS NAME */
+.site-title,
+.site-title a {
+  color: #103c60;
+}
+
+/* NAVIGATION */
+#nav-menu a {
+  color: #103c60;
+}
+
+#nav-menu a:hover,
+.site-title a:hover {
+  color: #00aaff;
+}
+
+/* PHONE NUMBER */
+.call-number,
+.call-number a {
+  color: #103c60;
+}
+
+.call-number a:hover {
+  color: #00aaff;
+}
+
+/* HAMBURGER BUTTON */
+.menu-toggle {
+  border-color: #103c60;
+}
+
+.menu-toggle span {
+  background: #103c60;
+}
+
+/* MOBILE NAVIGATION */
+@media (max-width: 760px) {
+  #nav-menu {
+    background: #ffffff;
+    border-top: 1px solid #e5e7eb;
+  }
+
+  #nav-menu a {
+    color: #103c60;
+  }
+
+  #nav-menu.is-open {
+    display: flex;
+  }
+}
