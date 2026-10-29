@@ -30,25 +30,37 @@ button:focus-visible {
 
 /* =========================================
    WHITE HEADER
-========================================= */
 
-header {
-  width: 100%;
-  background: #ffffff;
-  color: #103c60;
-  border-bottom: 1px solid #e5e7eb;
+
+
+
+
+
+
+/* HEADER */
+
+header{
+background:#0d3b66;
+color:white;
+padding:15px 0;
 }
 
-.nav {
-  max-width: 1200px;
-  margin: auto;
-  padding: 20px 24px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 18px;
-  flex-wrap: wrap;
+.nav{
+width:90%;
+max-width:1200px;
+margin:auto;
+display:flex;
+justify-content:space-between;
+align-items:center;
 }
+
+nav a{
+color:white;
+margin-left:20px;
+text-decoration:none;
+font-weight:500;
+}
+
 
 /* BUSINESS NAME */
 
