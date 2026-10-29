@@ -33,24 +33,6 @@ button:focus-visible {
 
 
 
-header {
-  background: #ffffff;
-  color: #103c60;
-  border-bottom: 1px solid #e5e7eb;
-  padding: 15px 0;
-}
-
-.nav {
-  width: 90%;
-  max-width: 1200px;
-  margin: auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 18px;
-  flex-wrap: wrap;
-}
-
 
 /* BUSINESS NAME */
 
